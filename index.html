@@ -1,193 +1,462 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+            rel="stylesheet"
+        />
+        <title>Ray Cho | Jnr Software Dev</title>
+    </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-  <title>Ray Cho | Software Developer</title>
-</head>
+    <body>
+        <div class="landing__page">
+            <header class="header">
+                <nav class="header__nav">
+                    <ul class="header__nav__ul">
+                        <li class="header__nav__ul__logo">
+                            <a href="#"
+                                ><span class="logoHover">RAY CHO</span></a
+                            >
+                        </li>
+                        <li class="header__nav__ul__li">
+                            <a href="#about">About</a>
+                        </li>
+                        <li class="header__nav__ul__li">
+                            <a href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="header__nav__ul__li">
+                            <a href="#cv">CV</a>
+                        </li>
+                        <li class="header__nav__ul__li">
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
 
-
-<body>
-  <header>
-    <div class='navbar'>
-      <nav id='main'>
-        <ul class='nav-links'>
-          <li class='logo'><a href="#">RAY CHO</a></li>
-          <li><a href='#about'>About</a></li>
-          <li><a href='#portfolio'>Portfolio</a></li>
-          <li><a href='#cv'>CV</a></li>
-          <li><a href='#contact'>Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-
-    <section>
-      <div class="heroSection">
-        <img class="desk-img" src="images/desk.jpg" alt="work desk with technology items">
-        <div class="top-info">
-          <h1 class='title'>I'm Ray, <br>Jnr Software Developer</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, nostrum? Nemo atque soluta rerum?
-            Tenetur dolorem sit dignissimos aspernatur nulla ut et maxime ipsam vel enim error reiciendis, minima autem.
-            <br>
-            <button class="btn view">VIEW PORTFOLIO</button>
-            <button class="btn contact">CONTACT ME</button>
-          </p>
+            <div class="heroSection">
+                <img
+                    class="heroSection__img heroSection__img--desk"
+                    src="images/desk__small.jpg"
+                    alt="work desk with technology items"
+                />
+                <div class="heroSection__container">
+                    <h1 class="heroSection__container--title">
+                        Welcome, I'm Ray.
+                        <br />Jnr Software Developer
+                    </h1>
+                    <p class="heroSection__container--para">
+                        Former Business Consultant and now Trainee Software
+                        Developer on the path to become a Full Stack Developer.
+                    </p>
+                    <br />
+                    <div>
+                        <button
+                            class="
+                                heroSection__container--btn
+                                heroSection__container--btn--view
+                            "
+                        >
+                            VIEW PORTFOLIO
+                        </button>
+                        <button
+                            class="
+                                heroSection__container--btn
+                                heroSection__container--btn--contact
+                            "
+                        >
+                            CONTACT ME
+                        </button>
+                    </div>
+                </div>
+                <img
+                    class="heroSection__img heroSection__img--skyline"
+                    src="images/skyline__small.jpg"
+                    alt="modern city skyline showing buildings"
+                />
+            </div>
         </div>
-        <img class="skyline-img" src="images/skyline.jpg" alt="modern city skyline showing buildings">
-      </div>
-    </section>
-  </header>
 
-  <main>
-    <section class='about'>
-      <div class='text'>
-        <p class='aboutWords'>Hi, my name is Ray Cho and I am a Front End enthusiast with a passion to create
-          practical
-          websites built on the principles of simplicity of use and beautiful designs.<br>
-          <br>Prior to this, I worked as a Business Consultant in the tech space over 15 years working with clients
-          and
-          hold an MBA from AGSM,
-          University of NSW. I am now looking forward to merge my business background with the ability to create
-          beautiful and
-          engaging front-end sites and help clients achieve their strategic objectives.<br>
-          <br>Away from work, you can find me in a Jiu-Jitsu gym somewhere trying not be choked out....again! :)
-        </p>
-      </div>
-    </section>
-    <div class="experience">
-      <h3><a id='principles' class="headings"></a>Principles:</h3>
-      <div class="elements">
-        <h4 class="words1">Design</h4>
-        <p class="words">From the onset of taking up studies, the idea of building websites with the best design
-          principles in play has been on my mind. Creating easy to use sites with the look and feel of professional
-          webhouses is what is necessary when designing</p>
-      </div>
-      <div class="elements">
-        <h4 class="words1">Development</h4>
-        <p class="words">From the onset of taking up studies, the idea of building websites with the best design
-          principles in play has been on my mind. Creating easy to use sites with the look and feel of professional
-          webhouses is what is necessary when designing</p>
-      </div>
-      <div class="elements">
-        <h4 class="words1">Involvement</h4>
-        <p class="words">From the onset of taking up studies, the idea of building websites with the best design
-          principles in play has been on my mind. Creating easy to use sites with the look and feel of professional
-          webhouses is what is necessary when designing</p>
-      </div>
-    </div>
+        <main class="scrolling-box">
+            <section class="about" id="about">
+                <div class="about__text">
+                    <p class="about__text__words">
+                        My name is Ray Cho and I am a Junior Software Developer
+                        with a passion for creating websites and software built
+                        on the principles of simplicity of code and beautiful
+                        designs.<br />
+                        <br />Prior to this, I was a Business Consultant in the
+                        tech space assisting clients and working within a global
+                        team of specialists in achieving collective goals. After
+                        completing a Technology transition course in software
+                        development, I now look forward to merging these skills
+                        with my business background and help contribute to an
+                        engaging team where I can continue to upskill and
+                        progress my software development career.
+                        <br />
+                        <br />Away from work, you can find me in a Jiu-Jitsu gym
+                        trying not be choked out....again! :)
+                    </p>
+                </div>
+            </section>
 
-    <h3><a id='portfolio' class="headings"></a>Portfolio:</h3>
-    <div class="project-tile">
-      <div class="items">
-        <img id="image" src="FOTOS/1.JPG" alt="destination1">
-        <h3 class="projname">Tribute Page</h3>
-      </div>
+            <section class="principle__container">
+                <div class="principle">
+                    <h2 class="principle__title">Principles</h2>
+                    <div class="principle__container">
+                        <div class="principle__section">
+                            <div class="principle__section__elements">
+                                <h4 class="principle__section__elements--title">
+                                    Design
+                                </h4>
+                                <img src="images/design-icon.png" />
+                            </div>
+                            <p class="principle__section--words">
+                                I believe well designed websites directly
+                                enhance the overall user experience and I strive
+                                to create visually engaging interfaces for all
+                                digital mediums.
+                            </p>
+                        </div>
 
-      <div class="items">
-        <img id="image" src="FOTOS/2.JPG" alt="destination2">
-        <h3 class="projname">Random Quote Machine</h3>
-      </div>
+                        <div class="principle__section">
+                            <div class="principle__section__elements">
+                                <h4 class="principle__section__elements--title">
+                                    Clean Code
+                                </h4>
+                                <img src="images/dev-icon.png" alt="" />
+                            </div>
 
-      <div class="items">
-        <img id="image" src="FOTOS/3.JPG" alt="destination3">
-        <h3 class="projname">Javascript Calculator</h3>
-      </div>
+                            <p class="principle__section--words">
+                                I believe contributing clean code is important
+                                for the scalability of projects and for other
+                                developers to read. It includes non-repetitive,
+                                decoupled & modular code that is well documented
+                                and tested.
+                            </p>
+                        </div>
 
-      <div class="items">
-        <img id="image" src="FOTOS/4.JPG" alt="destination4">
-        <h3 class="projname">Map Data</h3>
-      </div>
+                        <div class="principle__section">
+                            <div class="principle__section__elements">
+                                <h4 class="principle__section__elements--title">
+                                    Collaboration
+                                </h4>
+                                <img src="images/involve-icon.png" alt="" />
+                            </div>
+                            <p class="principle__section--words">
+                                My career to date has been built on working
+                                closely with others and achieving success
+                                collectively. This is something I strive to
+                                accomplish in every group setting.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-      <div class="items">
-        <img id="image" src="FOTOS/5.JPG" alt="destination5">
-        <h3 class="projname">Wikipedia Viewer</h3>
-      </div>
+            <section class="portfolio" id="portfolio">
+                <h2 class="portfolio__title">Collection of Projects</h2>
+                <div class="portfolio__project">
+                    <img
+                        class="portfolio__project--img"
+                        src="images/mothdx.png"
+                        alt="morse"
+                    />
+                    <div class="portfolio__project--text">
+                        <h2 class="portfolio__project--text--title">
+                            Feature Project: &nbsp;&nbsp; Mothdx (Client
+                            Project)
+                        </h2>
+                        <div class="portfolio__project--text--containerIcons">
+                            <img
+                                class="portfolio__project--img--icons"
+                                src="images/react.svg"
+                                alt="js"
+                            />
+                            <img
+                                class="portfolio__project--img--icons"
+                                src="images/sass.svg"
+                                alt="sass"
+                            />
+                            <img
+                                class="portfolio__project--img--icons"
+                                src="images/spring.svg"
+                                alt="html"
+                            />
+                            <img
+                                class="portfolio__project--img--icons"
+                                src="images/java.svg"
+                                alt="html"
+                            />
+                            <img
+                                class="portfolio__project--img--icons"
+                                src="images/mysql.svg"
+                                alt="html"
+                            />
+                        </div>
+                        <div class="portfolio__project--text--words">
+                            <h4>
+                                Mothdx produces nucleic-acid-based diagnostic
+                                devices for rapid and accurate testing. Our
+                                group task was to build an MVC web app with
+                                React, a REST API backend with Spring boot and
+                                MySQL for data management. <br />
+                                Key learnings were API integration, GIT flow,
+                                agile practices, data management & meeting
+                                client MVP requirements & timelines.
+                            </h4>
+                            <a href="https://github.com/" target="_blank">
+                                <img
+                                    class="portfolio__project--text--words--img"
+                                    src="https://img.icons8.com/ios-glyphs/30/000000/github.png"
+                                    alt="github"
+                            /></a>
 
-      <div class="items">
-        <img id="image" src="FOTOS/6.JPG" alt="destination6">
-        <h3 class="projname">Tic Tac Toe Game</h3>
-      </div>
-    </div>
+                            <a href="https://github.com/" target="_blank">
+                                <img
+                                    class="portfolio__project--text--words--img"
+                                    src="https://img.icons8.com/material-outlined/24/000000/external-link.png"
+                            /></a>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="portfolio__project">
+                    <div class="portfolio__project--text">
+                        <h2 class="portfolio__project--text--title">
+                            Feature Project: &nbsp;&nbsp; Morse Code Translator
+                        </h2>
+                        <div class="portfolio__project--text--containerIcons">
+                            <img
+                                class="portfolio__project--img--icons"
+                                src="images/js.svg"
+                                alt="js"
+                            />
+                            <img
+                                class="portfolio__project--img--icons"
+                                src="images/sass.svg"
+                                alt="sass"
+                            />
+                            <img
+                                class="portfolio__project--img--icons"
+                                src="images/html.svg"
+                                alt="html"
+                            />
+                        </div>
+                        <div class="portfolio__project--text--words">
+                            <h4>
+                                Morse code translator built using vanilla
+                                JavaScript, SASS & HTML. <br />
+                                Key learnings were DOM manipulation, BEM for
+                                styling structure and handling outputs of JS
+                                functions.
+                            </h4>
+                            <a href="https://github.com/" target="_blank">
+                                <img
+                                    class="portfolio__project--text--words--img"
+                                    src="https://img.icons8.com/ios-glyphs/30/000000/github.png"
+                                    alt="github"
+                            /></a>
 
-    <div class="reachout">
-      <h3><a id='cv' class="headings"></a>CV</h3>
-      <div class="contacts">
-        <h2>Get in Touch! </h2>
-        <p>If you have any ideas you would like to discuss then feel free to shoot me an email or fill in the below.</p>
-      </div>
-    </div>
+                            <a href="https://github.com/" target="_blank">
+                                <img
+                                    class="portfolio__project--text--words--img"
+                                    src="https://img.icons8.com/material-outlined/24/000000/external-link.png"
+                            /></a>
+                        </div>
+                    </div>
+                    <img
+                        class="portfolio__project--img"
+                        src="images/morse2.png"
+                        alt="morse"
+                    />
+                </div>
+                <div class="portfolio__project">
+                    <img
+                        class="portfolio__project--img"
+                        src="images/ecommerce2.png"
+                        alt="morse"
+                    />
+                    <div class="portfolio__project--text">
+                        <h2 class="portfolio__project--text--title">
+                            Feature Project: &nbsp;&nbsp; Ecommerce Site
+                        </h2>
+                        <div class="portfolio__project--text--containerIcons">
+                            <img
+                                class="portfolio__project--img--icons"
+                                src="images/js.svg"
+                                alt="js"
+                            />
+                            <img
+                                class="portfolio__project--img--icons"
+                                src="images/sass.svg"
+                                alt="sass"
+                            />
+                            <img
+                                class="portfolio__project--img--icons"
+                                src="images/react.svg"
+                                alt="html"
+                            />
+                            <img
+                                class="portfolio__project--img--icons"
+                                src="images/firebase.svg"
+                                alt="html"
+                            />
+                        </div>
+                        <div class="portfolio__project--text--words">
+                            <h4>
+                                Ecommerce site built using JavaScript & REACT
+                                framework with persistent data management via
+                                Firebase.
+                                <br />
+                                Key learnings were building functional REACT
+                                components using hooks and incorporating CRUD
+                                operations for persistent cart management.
+                            </h4>
+                            <a href="https://github.com/" target="_blank">
+                                <img
+                                    class="portfolio__project--text--words--img"
+                                    src="https://img.icons8.com/ios-glyphs/30/000000/github.png"
+                                    alt="github"
+                            /></a>
 
-  </main>
+                            <a href="https://github.com/" target="_blank">
+                                <img
+                                    class="portfolio__project--text--words--img"
+                                    src="https://img.icons8.com/material-outlined/24/000000/external-link.png"
+                            /></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__project">
+                    <div class="portfolio__project--text">
+                        <h2 class="portfolio__project--text--title">
+                            Feature Project: &nbsp;&nbsp; Online Library
+                        </h2>
+                        <div class="portfolio__project--text--containerIcons">
+                            <img
+                                class="portfolio__project--img--icons"
+                                src="images/js.svg"
+                                alt="js"
+                            />
+                            <img
+                                class="portfolio__project--img--icons"
+                                src="images/sass.svg"
+                                alt="sass"
+                            />
+                            <img
+                                class="portfolio__project--img--icons"
+                                src="images/html.svg"
+                                alt="html"
+                            />
+                        </div>
+                        <div class="portfolio__project--text--words">
+                            <h4>
+                                Online digital library built using JavaScript &
+                                SASS along with API integration with Google
+                                Books.
+                                <br />
+                                Key learnings were researching and using API
+                                docs to build solutions, API integration and
+                                returning backend data efficiently on the
+                                frontend.
+                            </h4>
+                            <a href="https://github.com/" target="_blank">
+                                <img
+                                    class="portfolio__project--text--words--img"
+                                    src="https://img.icons8.com/ios-glyphs/30/000000/github.png"
+                                    alt="github"
+                            /></a>
 
+                            <a href="https://github.com/" target="_blank">
+                                <img
+                                    class="portfolio__project--text--words--img"
+                                    src="https://img.icons8.com/material-outlined/24/000000/external-link.png"
+                            /></a>
+                        </div>
+                    </div>
+                    <img
+                        class="portfolio__project--img"
+                        src="images/library2.png"
+                        alt="morse"
+                    />
+                </div>
+                <div class="portfolio__project">
+                    <img
+                        class="portfolio__project--img"
+                        src="images/calculator.png"
+                        alt="morse"
+                    />
+                    <div class="portfolio__project--text">
+                        <h2 class="portfolio__project--text--title">
+                            Feature Project: &nbsp; Digital Calculator
+                        </h2>
+                        <div class="portfolio__project--text--containerIcons">
+                            <img
+                                class="portfolio__project--img--icons"
+                                src="images/js.svg"
+                                alt="js"
+                            />
+                            <img
+                                class="portfolio__project--img--icons"
+                                src="images/sass.svg"
+                                alt="sass"
+                            />
+                            <img
+                                class="portfolio__project--img--icons"
+                                src="images/html.svg"
+                                alt="html"
+                            />
+                        </div>
+                        <div class="portfolio__project--text--words">
+                            <h4>
+                                Functional calculator built with vanilla
+                                JavaScript, SASS and HTML. <br />
+                                Key learnings were writing JavaScript to handle
+                                & display multiple user inputs & functions and
+                                designing an appealing product for the end user.
+                            </h4>
+                            <a href="https://github.com/" target="_blank">
+                                <img
+                                    class="portfolio__project--text--words--img"
+                                    src="https://img.icons8.com/ios-glyphs/30/000000/github.png"
+                                    alt="github"
+                            /></a>
 
+                            <a href="https://github.com/" target="_blank">
+                                <img
+                                    class="portfolio__project--text--words--img"
+                                    src="https://img.icons8.com/material-outlined/24/000000/external-link.png"
+                            /></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="cv" id="cv">
+                    <a href=""></a>
+                    <h3 class="cv__title">CV</h3>
+                    <div class="cv__contacts">
+                        <h2 class="cv__contacts__title">Get in Touch!</h2>
+                        <p class="cv__contacts_-words">
+                            If you have any questions then please feel free to
+                            shoot me an email.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
 
-  <footer class="footer">
-    <h3><a id='contact' class="headings"></a>Contact:</h3>
-    <div class="wrapper">
-      <div class="connect" id="contact">
-        <a href="" class="share twitter">
-          <svg role="presentation" class="svg--icon">
-            <use xlink:href="#svg--twitter" />
-          </svg>
-          <span class="socmedia">TWITTER</span>
-        </a>
+        <footer class="footer" id="contact">
+            <h3 class="footer__sign">Created by _RC_ 2021</h3>
+        </footer>
 
-        <a href="" rel="author" class="share facebook">
-          <svg role="presentation" class="svg--icon">
-            <use xlink:href="#svg--facebook" />
-            <span class="socmedia">FACEBOOK</span>
-          </svg>
-        </a>
-
-        <a href="" class="share github">
-          <svg role="presentation" class="svg--icon">
-            <use xlink:href="#svg--github" />
-            <span class="socmedia">GITHUB</span>
-          </svg>
-        </a>
-
-      </div>
-    </div>
-
-    <svg class="svg--source" width="0" height="0" aria-hidden="true">
-      <symbol id="svg--twitter" viewbox="0 -7 15 30">
-        <path
-          d="M15.36 3.434c-0.542 0.241-1.124 0.402-1.735 0.476 0.624-0.374 1.103-0.966 1.328-1.67-0.583 0.346-1.23 0.598-1.917 0.733-0.551-0.587-1.336-0.954-2.205-0.954-1.668 0-3.020 1.352-3.020 3.019 0 0.237 0.026 0.467 0.078 0.688-2.51-0.126-4.735-1.328-6.224-3.155-0.261 0.446-0.41 0.965-0.41 1.518 0 1.048 0.534 1.972 1.344 2.514-0.495-0.016-0.961-0.151-1.368-0.378 0 0.013 0 0.025 0 0.038 0 1.463 1.042 2.683 2.422 2.962-0.253 0.069-0.52 0.106-0.796 0.106-0.194 0-0.383-0.018-0.568-0.054 0.384 1.2 1.5 2.073 2.821 2.097-1.034 0.81-2.335 1.293-3.75 1.293-0.244 0-0.484-0.014-0.72-0.042 1.336 0.857 2.923 1.357 4.63 1.357 5.554 0 8.592-4.602 8.592-8.593 0-0.13-0.002-0.261-0.009-0.39 0.59-0.426 1.102-0.958 1.507-1.563z" />
-      </symbol>
-
-      <symbol id="svg--facebook" viewbox="0 -7 16 30">
-        <path
-          d="M12 3.303h-2.285c-0.27 0-0.572 0.355-0.572 0.831v1.65h2.857v2.352h-2.857v7.064h-2.698v-7.063h-2.446v-2.353h2.446v-1.384c0-1.985 1.378-3.6 3.269-3.6h2.286v2.503z" />
-      </symbol>
-
-      <symbol id="svg--github" viewbox="-30 -30 150 150">
-        <path d="M61.896,52.548c-3.59,0-6.502,4.026-6.502,8.996c0,4.971,2.912,8.999,6.502,8.999
-          c3.588,0,6.498-4.028,6.498-8.999C68.395,56.574,65.484,52.548,61.896,52.548z M84.527,29.132c0.74-1.826,0.777-12.201-3.17-22.132
-          c0,0-9.057,0.993-22.76,10.396c-2.872-0.793-7.736-1.19-12.597-1.19s-9.723,0.396-12.598,1.189C19.699,7.993,10.645,7,10.645,7
-          c-3.948,9.931-3.913,20.306-3.172,22.132C2.834,34.169,0,40.218,0,48.483c0,35.932,29.809,36.508,37.334,36.508
-          c1.703,0,5.088,0.004,8.666,0.009c3.578-0.005,6.965-0.009,8.666-0.009C62.191,84.991,92,84.415,92,48.483
-          C92,40.218,89.166,34.169,84.527,29.132z M46.141,80.574H45.86c-18.859,0-33.545-2.252-33.545-20.58
-          c0-4.389,1.549-8.465,5.229-11.847c6.141-5.636,16.527-2.651,28.316-2.651c0.045,0,0.093-0.001,0.141-0.003
-          c0.049,0.002,0.096,0.003,0.141,0.003c11.789,0,22.178-2.984,28.316,2.651c3.68,3.382,5.229,7.458,5.229,11.847
-          C79.686,78.322,65,80.574,46.141,80.574z M30.104,52.548c-3.588,0-6.498,4.026-6.498,8.996c0,4.971,2.91,8.999,6.498,8.999
-          c3.592,0,6.502-4.028,6.502-8.999C36.605,56.574,33.695,52.548,30.104,52.548z" />
-      </symbol>
-    </svg>
-
-
-    <script type="text/javascript" src="script.js"></script>
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    <div>
-      <h3 id="copy">© 2021 developed by _RC_ </h3>
-    </div>
-  </footer>
-</body>
-
+        <script type="text/javascript" src="script.js"></script>
+    </body>
 </html>
