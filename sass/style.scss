@@ -1,7 +1,14 @@
+@use "devices" as devices;
+
 html {
     box-sizing: border-box;
     font-family: "Lato", sans-serif;
     scroll-behavior: smooth;
+
+    @include devices.tablet {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
 }
 
 *,
@@ -15,6 +22,11 @@ body {
     margin: auto 0;
     padding: 0;
     // background-color: #f1f1f1;
+
+    @include devices.tablet {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
 }
 
 /*Top Navbar and hero section */
@@ -53,6 +65,11 @@ body {
                     transition: all 0.5s;
                     text-transform: uppercase;
                     display: inline-block;
+
+                    @include devices.tablet {
+                        font-size: 0.8rem;
+                        padding: 20px 0;
+                    }
                 }
 
                 & a:link {
@@ -70,6 +87,10 @@ body {
                 align-items: center;
                 justify-content: center;
                 display: flex;
+
+                @include devices.tablet {
+                    display: none;
+                }
 
                 & a {
                     color: white;
@@ -122,9 +143,17 @@ body {
         grid-row: 2 / 6;
         max-height: 410px;
 
+        @include devices.tablet {
+            grid-column: 2 / 8;
+        }
+
         &--title {
             // line-height: 56px;
             margin: 0;
+
+            @include devices.tablet {
+                font-size: 1.5rem;
+            }
         }
 
         &--para {
@@ -141,6 +170,13 @@ body {
             box-shadow: 0 2px rgba(0, 0, 0, 0.1);
             cursor: pointer;
             border-radius: 5px;
+            font-size: 1rem;
+            text-transform: uppercase;
+
+            @include devices.tablet {
+                margin: 10px;
+                font-size: 0.8rem;
+            }
 
             &--contact {
                 background-color: #ffff;
@@ -177,6 +213,10 @@ body {
             /*media query or vh,vw*/
             grid-column: 1 / 4;
             grid-row: 4 / 6;
+
+            @include devices.tablet {
+                height: 280px;
+            }
         }
 
         &--skyline {
@@ -188,6 +228,10 @@ body {
             grid-row: 1 / 4;
             // width: 850px;
             height: 420px;
+
+            @include devices.tablet {
+                height: 380px;
+            }
         }
     }
 }
@@ -195,7 +239,7 @@ body {
 /*About Section*/
 .about {
     height: 100vh;
-    background-image: url("images/skyFoto.jpg");
+    background-image: url("../images/skyFoto.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     font-size: 1.5rem;
@@ -204,9 +248,18 @@ body {
     justify-content: center;
     line-height: 1.4;
 
+    @include devices.tablet {
+        font-size: 0.9rem;
+        height: 80vh;
+    }
+
     &__text {
         padding: 150px;
         font-weight: 400;
+
+        @include devices.tablet {
+            padding: 15px;
+        }
 
         &__words {
             margin: 0;
@@ -217,11 +270,21 @@ body {
 /* pinciples */
 .principle__container {
     margin-bottom: 75px;
+
+    @include devices.tablet {
+        margin-bottom: 10px;
+        padding: 1px;
+    }
 }
 
 .principle {
     padding: 50px;
     background-color: #ccddeb;
+
+    @include devices.tablet {
+        padding: 8px;
+        width: 100%;
+    }
 
     &__container {
         display: flex;
@@ -236,6 +299,10 @@ body {
         align-items: center;
         justify-content: center;
         text-transform: uppercase;
+
+        @include devices.tablet {
+            font-size: 0.85rem;
+        }
     }
 
     &__section {
@@ -244,10 +311,28 @@ body {
         font-size: 1.25rem;
         padding: 5px 25px;
 
+        @include devices.tablet {
+            font-size: 0.8rem;
+            padding: 5px;
+            width: 120px;
+            height: 250px;
+        }
+
         &__elements {
             display: flex;
             justify-content: center;
             align-items: center;
+
+            @include devices.tablet {
+                & img {
+                    width: 40px;
+                    height: 40px;
+                }
+
+                &--title {
+                    text-align: center;
+                }
+            }
         }
 
         &--words {
@@ -264,6 +349,11 @@ body {
     padding: 50px 150px 0 150px;
     text-align: center;
     text-transform: uppercase;
+
+    @include devices.tablet {
+        padding: 20px;
+        font-size: 0.85rem;
+    }
 }
 
 .portfolio__project {
@@ -271,11 +361,35 @@ body {
     padding: 50px 150px;
     margin-bottom: 130px;
 
+    @include devices.tablet {
+        padding: 10px 0;
+        display: block;
+        margin-bottom: 50px;
+    }
+
+    &--reverse {
+        display: flex;
+        padding: 50px 150px;
+        margin-bottom: 130px;
+
+        @include devices.tablet {
+            flex-direction: column-reverse;
+            padding: 10px 0;
+            margin-bottom: 50px;
+        }
+    }
+
     &--img {
         width: 680px;
         height: 420px;
         opacity: 0.3;
         cursor: pointer;
+
+        @include devices.tablet {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
 
         &:hover {
             opacity: 1;
@@ -284,18 +398,35 @@ body {
         &--icons {
             width: 130px;
             padding: 15px;
+
+            @include devices.tablet {
+                width: 60px;
+                padding: 10px 0;
+            }
         }
     }
 
     &--text {
         background-color: rgb(145, 196, 241);
         // position: absolute;
-        top: 140px;
-        left: 680px;
+        // top: 140px;
+        // left: 680px;
         width: 760px;
+
+        @include devices.tablet {
+            width: 100%;
+            margin: 0;
+            padding-top: 0;
+        }
 
         &--title {
             text-align: center;
+
+            @include devices.tablet {
+                font-size: 1rem;
+                padding-top: 10px;
+                margin-top: 0;
+            }
         }
 
         &--containerIcons {
@@ -311,8 +442,17 @@ body {
             text-align: center;
             padding: 10px;
 
+            @include devices.tablet {
+                font-size: 0.75rem;
+                padding-top: 5px;
+            }
+
             &--img {
-                padding: 10px;
+                padding: 10px 0;
+
+                @include devices.tablet {
+                    padding: 5px 0;
+                }
             }
         }
     }
@@ -324,13 +464,59 @@ body {
     padding: 75px 50px;
     text-align: center;
     background-color: #ccddeb;
+
+    @include devices.tablet {
+        padding: 20px;
+        font-size: 0.7rem;
+    }
+
+    &__contacts__buttons {
+        &__btn {
+            margin: 20px 10px 0 0;
+            padding: 10px;
+            font-weight: 400;
+            background-color: #96858f;
+            color: #ffff;
+            border: transparent;
+            box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+
+            @include devices.tablet {
+                font-size: 0.8rem;
+            }
+
+            &--resume {
+                background-color: #ffff;
+                color: #393939;
+
+                &:hover {
+                    background-color: #96858f;
+                    color: #ffff;
+                }
+            }
+
+            &--contact:hover {
+                background-color: #ffff;
+                color: #393939;
+            }
+        }
+    }
 }
 
 /*Contact Section*/
 .footer {
     &__sign {
-        padding: 10px;
+        padding: 40px 0 20px 0;
         text-align: center;
+        font-size: 1rem;
+        font-weight: 200;
+
+        @include devices.tablet {
+            font-size: 0.8rem;
+        }
     }
 }
 
@@ -344,6 +530,10 @@ body {
     box-shadow: 0 5px rgba(0, 0, 0, 0.1);
     background: linear-gradient(to right, #ccddeb, #eef2f3);
     z-index: 2;
+
+    @include devices.tablet {
+        display: none;
+    }
 }
 
 .fixed-nav .heroSection__container {
@@ -357,5 +547,3 @@ body {
 .fixed-nav .heroSection__img--skyline {
     z-index: -1;
 }
-
-// change padding when click on navbar links to page
