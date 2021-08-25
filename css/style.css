@@ -131,6 +131,8 @@ body {
 @media only screen and (max-width: 992px) {
   .heroSection__container {
     grid-column: 2/8;
+    grid-row: 2/5;
+    padding: 0;
   }
 }
 .heroSection__container--title {
@@ -138,11 +140,16 @@ body {
 }
 @media only screen and (max-width: 992px) {
   .heroSection__container--title {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 .heroSection__container--para {
   width: 85%;
+}
+@media only screen and (max-width: 992px) {
+  .heroSection__container--para {
+    font-size: 0.85rem;
+  }
 }
 .heroSection__container--btn {
   margin: 20px 10px 0 0;
@@ -160,7 +167,7 @@ body {
 @media only screen and (max-width: 992px) {
   .heroSection__container--btn {
     margin: 10px;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 }
 .heroSection__container--btn--contact {
@@ -190,6 +197,7 @@ body {
 @media only screen and (max-width: 992px) {
   .heroSection__img--desk {
     height: 280px;
+    width: 260px;
   }
 }
 .heroSection__img--skyline {
@@ -238,13 +246,12 @@ body {
 }
 
 /* pinciples */
-.principle__container {
+.principle__firstContainer {
   margin-bottom: 75px;
 }
 @media only screen and (max-width: 992px) {
-  .principle__container {
-    margin-bottom: 10px;
-    padding: 1px;
+  .principle__firstContainer {
+    margin-bottom: 30px;
   }
 }
 
@@ -263,6 +270,12 @@ body {
   align-items: center;
   justify-content: center;
   /* height: 70vh; */
+}
+@media only screen and (max-width: 992px) {
+  .principle__container {
+    margin-bottom: 25px;
+    width: 100%;
+  }
 }
 .principle__title {
   padding-bottom: 10px;
@@ -345,16 +358,24 @@ body {
     margin-bottom: 50px;
   }
 }
-.portfolio__project--img {
-  width: 680px;
+.portfolio__project__imgGap {
+  width: 780px;
   height: 420px;
+}
+@media only screen and (max-width: 992px) {
+  .portfolio__project__imgGap {
+    width: 375px;
+    height: 211px;
+  }
+}
+.portfolio__project--img {
+  width: 100%;
+  height: 100%;
   opacity: 0.3;
   cursor: pointer;
 }
 @media only screen and (max-width: 992px) {
   .portfolio__project--img {
-    width: 100%;
-    height: 100%;
     margin: 0;
   }
 }

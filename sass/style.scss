@@ -145,6 +145,8 @@ body {
 
         @include devices.tablet {
             grid-column: 2 / 8;
+            grid-row: 2 / 5;
+            padding: 0;
         }
 
         &--title {
@@ -152,12 +154,16 @@ body {
             margin: 0;
 
             @include devices.tablet {
-                font-size: 1.5rem;
+                font-size: 1.2rem;
             }
         }
 
         &--para {
             width: 85%;
+
+            @include devices.tablet {
+                font-size: 0.85rem;
+            }
         }
 
         &--btn {
@@ -175,7 +181,7 @@ body {
 
             @include devices.tablet {
                 margin: 10px;
-                font-size: 0.8rem;
+                font-size: 0.7rem;
             }
 
             &--contact {
@@ -216,6 +222,7 @@ body {
 
             @include devices.tablet {
                 height: 280px;
+                width: 260px;
             }
         }
 
@@ -268,12 +275,11 @@ body {
 }
 
 /* pinciples */
-.principle__container {
+.principle__firstContainer {
     margin-bottom: 75px;
 
     @include devices.tablet {
-        margin-bottom: 10px;
-        padding: 1px;
+        margin-bottom: 30px;
     }
 }
 
@@ -291,6 +297,11 @@ body {
         align-items: center;
         justify-content: center;
         /* height: 70vh; */
+
+        @include devices.tablet {
+            margin-bottom: 25px;
+            width: 100%;
+        }
     }
 
     &__title {
@@ -379,15 +390,23 @@ body {
         }
     }
 
-    &--img {
-        width: 680px;
+    &__imgGap {
+        width: 780px;
         height: 420px;
+
+        @include devices.tablet {
+            width: 375px;
+            height: 211px;
+        }
+    }
+
+    &--img {
+        width: 100%;
+        height: 100%;
         opacity: 0.3;
         cursor: pointer;
 
         @include devices.tablet {
-            width: 100%;
-            height: 100%;
             margin: 0;
         }
 
