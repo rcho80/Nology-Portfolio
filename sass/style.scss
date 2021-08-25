@@ -288,7 +288,7 @@ body {
     background-color: #ccddeb;
 
     @include devices.tablet {
-        padding: 8px;
+        padding: 2px;
         width: 100%;
     }
 
@@ -324,7 +324,7 @@ body {
 
         @include devices.tablet {
             font-size: 0.8rem;
-            padding: 5px;
+            padding: 0;
             width: 120px;
             height: 250px;
         }
