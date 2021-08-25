@@ -348,7 +348,7 @@ body {
 
         &--words {
             @include devices.tablet {
-                margin: 5px 0;
+                margin: 0;
             }
         }
     }
