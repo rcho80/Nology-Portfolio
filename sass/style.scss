@@ -334,10 +334,12 @@ body {
             justify-content: center;
             align-items: center;
 
-            @include devices.tablet {
-                & img {
-                    width: 40px;
-                    height: 40px;
+            &--img {
+                @include devices.tablet {
+                    & img {
+                        width: 40px;
+                        height: 40px;
+                    }
                 }
 
                 &--title {
