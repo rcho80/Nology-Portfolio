@@ -1,5 +1,5 @@
 # Nology-Portfolio
 
-Nology-Portfolio is a personal portfolio including my works
+Nology-Portfolio is a personal portfolio of my work
 
 It was created using HTML, CSS(SASS) and Javascript
