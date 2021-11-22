@@ -412,6 +412,7 @@ body {
 
         @include devices.tablet {
             margin: 0;
+            opacity: 1;
         }
 
         &:hover {
